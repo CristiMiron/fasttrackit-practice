@@ -2,7 +2,7 @@ package ro.fastrackit.classroom;
 
 import java.time.LocalDate;
 
-public class Student {
+public class Student extends Human{
     private String lastName;
     private String firstName;
     private LocalDate dateOfBirth;
@@ -10,11 +10,12 @@ public class Student {
     private Float grade;
     private Boolean finishedClass;
 
-    public Student(String lastName, String firstName, LocalDate dateOfBirth) {
+    public Student() {
         this.lastName = lastName;
         this.firstName = firstName;
         this.dateOfBirth = dateOfBirth;
     }
+
 
     public String getLastName() {
         return lastName;
@@ -55,7 +56,4 @@ public class Student {
         this.finishedClass = finishedClass;
     }
 
-    public static void main(String[] args) {
-
-    }
 }
