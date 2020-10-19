@@ -2,15 +2,16 @@ package ro.fastrackit.classroom;
 
 import java.time.LocalDate;
 
-public class Student extends Human{
+public class Student implements Human {
     private String lastName;
     private String firstName;
     private LocalDate dateOfBirth;
     private String emailAddress;
     private Float grade;
     private Boolean finishedClass;
+    private StudentType type;
 
-    public Student() {
+    public Student(String lastName, String firstName, LocalDate dateOfBirth) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.dateOfBirth = dateOfBirth;
@@ -54,6 +55,16 @@ public class Student extends Human{
 
     public void setFinishedClass(Boolean finishedClass) {
         this.finishedClass = finishedClass;
+    }
+
+    @Override
+    public int getIdNumber() {
+        return getIdNumber();
+    }
+
+    @Override
+    public StudentType getType(ScholarType getType) {
+        return type;
     }
 
 }

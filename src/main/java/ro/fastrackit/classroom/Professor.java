@@ -2,21 +2,19 @@ package ro.fastrackit.classroom;
 
 import java.time.LocalDate;
 
-public class Professor extends Human{
+public class Professor implements Human {
     private String lastName;
     private String firstName;
     private LocalDate dateOfBirth;
     private LocalDate dateOfHiring;
     private String emailAddress;
     public Boolean isPhd;
+    private ProfessorType type;
 
-    public Professor(String lastName, String firstName, LocalDate dateOfBirth, LocalDate dateOfHiring,
-                     String emailAddress, Boolean isPhd) {
+
+    public Professor(String lastName, String firstName, Boolean isPhd) {
         this.lastName = lastName;
         this.firstName = firstName;
-        this.dateOfBirth = dateOfBirth;
-        this.dateOfHiring = dateOfHiring;
-        this.emailAddress = emailAddress;
         this.isPhd = isPhd;
     }
 
@@ -66,5 +64,15 @@ public class Professor extends Human{
 
     public void setPhd(Boolean phd) {
         isPhd = phd;
+    }
+
+ @Override
+    public int getIdNumber() {
+        return getIdNumber();
+ }
+
+    @Override
+    public StudentType getType(ScholarType getType) {
+        return type;
     }
 }
