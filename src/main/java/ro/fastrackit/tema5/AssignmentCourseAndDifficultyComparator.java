@@ -1,8 +1,6 @@
 package ro.fastrackit.tema5;
 
-import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.TreeSet;
 
 public class AssignmentCourseAndDifficultyComparator {
@@ -29,22 +27,17 @@ public class AssignmentCourseAndDifficultyComparator {
         four.setDifficultyLevel("Easy");
         four.setAssignmentTitle("Getter");
 
-TreeSet<Assignment> assignments = new TreeSet<>(Comparator.comparing(Assignment::getCourseNumber)
-.thenComparing(Assignment::getDifficultyLevel)
-.thenComparing(Assignment::getAssignmentTitle));
+        TreeSet<Assignment> assignments = new TreeSet<>(Comparator.comparing(Assignment::getCourseNumber)
+                .thenComparing(Assignment::getDifficultyLevel)
+                .thenComparing(Assignment::getAssignmentTitle));
 
-assignments.add(one);
-assignments.add(two);
-assignments.add(three);
-assignments.add(four);
+        assignments.add(one);
+        assignments.add(two);
+        assignments.add(three);
+        assignments.add(four);
 
         System.out.println(assignments);
     }
-
-
-
-
-
 
 
 }
