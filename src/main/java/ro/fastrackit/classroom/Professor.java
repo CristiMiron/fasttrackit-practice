@@ -66,13 +66,11 @@ public class Professor implements Human {
         isPhd = phd;
     }
 
- @Override
-    public int getIdNumber() {
-        return getIdNumber();
- }
+    public void setType(ProfessorType type) { this.type = type; }
 
     @Override
-    public StudentType getType(ScholarType getType) {
-        return type;
-    }
+    public int getIdNumber() { return getIdNumber(); }
+
+    @Override
+    public ScholarType getType() { return type; }
 }

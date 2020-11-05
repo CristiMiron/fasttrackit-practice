@@ -17,6 +17,7 @@ public class Student implements Human {
         this.dateOfBirth = dateOfBirth;
     }
 
+    public void setType() { this.type = type; }
 
     public String getLastName() {
         return lastName;
@@ -63,8 +64,6 @@ public class Student implements Human {
     }
 
     @Override
-    public StudentType getType(ScholarType getType) {
-        return type;
-    }
+    public ScholarType getType() { return type; }
 
 }

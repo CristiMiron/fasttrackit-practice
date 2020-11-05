@@ -19,6 +19,10 @@ public class Assignment implements Comparable<Assignment> {
         this.difficultyLevel = difficultyLevel;
     }
 
+    public Assignment() {
+
+    }
+
 
     public UUID getUniqueId() {
         return uniqueId;
