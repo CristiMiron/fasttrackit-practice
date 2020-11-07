@@ -1,6 +1,5 @@
 package ro.fastrackit.tema5;
 
-import java.io.OutputStream;
 
 public class Overloading {
     public static void main(String[] args) {

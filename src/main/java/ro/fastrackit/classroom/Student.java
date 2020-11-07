@@ -11,7 +11,7 @@ public class Student implements Human {
     private Boolean finishedClass;
     private StudentType type;
 
-    public Student(String lastName, String firstName, LocalDate dateOfBirth) {
+    public Student(String lastName, String firstName) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.dateOfBirth = dateOfBirth;
