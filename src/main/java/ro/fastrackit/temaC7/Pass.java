@@ -48,22 +48,22 @@ public class Pass {
 
         public static boolean isUppercase(String password) {
             for (int i= 0; i < password.length();i++){
-                if (!Character.isUpperCase(password.charAt(i))) {
-                    System.out.println("The password must contains uppercase.");
-                    return false;
+                if (Character.isUpperCase(password.charAt(i))) {
+                    return true;
                 }
             }
-            return true;
+            System.out.println("The password must contains uppercase.");
+            return false;
         }
 
     public static boolean isLowercase(String password) {
         for (int i= 0; i < password.length();i++){
-            if (!Character.isLowerCase(password.charAt(i))) {
-                System.out.println("The password must contains lowercase.");
-                return false;
+            if (Character.isLowerCase(password.charAt(i))) {
+                return true;
             }
         }
-        return true;
+        System.out.println("The password must contains lowercase.");
+        return false;
     }
 
 
