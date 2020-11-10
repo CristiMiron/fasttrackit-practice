@@ -1,6 +1,6 @@
 package ro.fastrackit.classroom;
 
-public class Box <T> {
+public class Box <T extends Human> {
 
     T kindOfBox;
 

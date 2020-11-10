@@ -42,6 +42,7 @@ public class ListWithUniqueId {
         List<Assignment> levelList = complete.stream()
                 .filter(levelEasy -> levelEasy.getDifficultyLevel().equals("Easy"))
                 .collect(Collectors.toList());
+
         System.out.println(levelList);
 
         System.out.println(" \n Map");
